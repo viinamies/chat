@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Kysy, ideioi ja opi tekoälyn avulla.">
+  <title>Nova AI — Tekoäly apunasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">✳</span><span>NOVA<span class="brand-light">AI</span></span></a>
+      <div class="top-pill"><span class="live-dot"></span> Tekoäly valmiina</div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span>✦</span> UUSI TAPASI AJATELLA</div>
+      <h1>Ideat alkavat<br><span>yhdestä kysymyksestä.</span></h1>
+      <p class="intro">Oma tekoälyavustajasi auttaa ideoimaan, oppimaan ja ratkaisemaan pulmia. Kysy rohkeasti mitä vain.</p>
+    </section>
+
+    <section class="chat-card" aria-label="Tekoälychat">
+      <div class="chat-head">
+        <div class="assistant-avatar">✳</div>
+        <div class="assistant-meta"><strong>Nova-avustaja</strong><span><i></i> Valmiina keskustelemaan</span></div>
+        <button class="clear-btn" id="clearBtn" type="button" title="Aloita uusi keskustelu">↻ <span>Uusi keskustelu</span></button>
+      </div>
+      <div class="messages" id="messages" aria-live="polite">
+        <div class="message assistant">
+          <div class="mini-avatar">✳</div>
+          <div class="bubble"><p>Hei! 👋 Olen Nova, tekoälyavustajasi.</p><p>Voin auttaa esimerkiksi opiskelussa, kirjoittamisessa, ideoinnissa tai arjen kysymyksissä. Mistä aloitetaan?</p></div>
+        </div>
+      </div>
+      <div class="suggestions" id="suggestions">
+        <button type="button" data-prompt="Auta minua keksimään uusi yritysidea">💡 Keksi yritysidea</button>
+        <button type="button" data-prompt="Selitä tekoäly helposti ymmärrettävästi">🧠 Selitä minulle jotain</button>
+        <button type="button" data-prompt="Laadi minulle tehokas opiskelusuunnitelma">📚 Tee opiskelusuunnitelma</button>
+      </div>
+      <form class="composer" id="chatForm">
+        <textarea id="prompt" rows="1" placeholder="Kirjoita viestisi tähän..." aria-label="Kirjoita viesti" required></textarea>
+        <button class="send-btn" type="submit" aria-label="Lähetä viesti"><span>↑</span></button>
+      </form>
+      <div class="fineprint">Nova voi tehdä virheitä. Tarkista tärkeät tiedot aina erikseen.</div>
+    </section>
+    <footer>© 2026 NOVA AI <span>•</span> Rakennettu uteliaille mielille</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
